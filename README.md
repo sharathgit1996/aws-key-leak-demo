@@ -1,5 +1,8 @@
 # aws-key-leak-demo
 
-**Educational demo**: This repository intentionally contains fake credentials to demonstrate how secrets can be leaked and detected. **No real secrets are used.**
+⚠️ Educational demo ONLY — contains intentionally fake AWS credentials in `config.js`.
 
-Do NOT use these credentials. This repo is for training only.
+## How to reproduce detection
+1. Clone repo
+2. Open `index.html` in a browser to see the demo
+3. Run secret scanners (TruffleHog) to detect the fake keys

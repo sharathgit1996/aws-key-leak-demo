@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head><meta charset="utf-8" /><title>AWS Key Leak Demo</title></head>
+  <body>
+    <h1>AWS Key Leak Demo</h1>
+    <p>This page demonstrates a (fake) AWS key embedded in website code.</p>
+    <script src="config.js"></script>
+    <script>
+      document.body.insertAdjacentHTML('beforeend',
+        `<pre>AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}\nAWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}</pre>`);
+    </script>
+  </body>
+</html>
